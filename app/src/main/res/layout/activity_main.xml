@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colorbac"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:layout_gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/admin"
+            android:layout_width="130dp"
+            android:layout_height="145dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            app:layout_column="0"
+            app:layout_row="0">
+
+            <ImageView
+                android:id="@+id/imageViewA"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/admin" />
+
+            <TextView
+                android:id="@+id/textViewA"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="98dp"
+                android:gravity="center"
+                android:text="Admin Profile"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/user"
+            android:layout_width="130dp"
+            android:layout_height="145dp"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            >
+
+            <ImageView
+                android:id="@+id/imageViewB"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/textViewB"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="98dp"
+                android:gravity="center"
+                android:text="Register User"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/attendance"
+            android:layout_width="130dp"
+            android:layout_height="145dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            app:layout_column="0"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/imageViewC"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/atttt" />
+
+            <TextView
+                android:id="@+id/textViewC"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="98dp"
+                android:gravity="center"
+                android:text="View Attendance"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/about"
+            android:layout_width="130dp"
+            android:layout_height="145dp"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            app:layout_column="1"
+            app:layout_row="1"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/imageViewD"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/about" />
+
+            <TextView
+                android:id="@+id/textViewD"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginTop="98dp"
+                android:gravity="center"
+                android:text="About US"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </androidx.gridlayout.widget.GridLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+</LinearLayout>
